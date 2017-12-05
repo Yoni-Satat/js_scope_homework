@@ -94,3 +94,25 @@ console.log(detectiveInfo());
 // detectiveInfo re-assign the detective name from Ace Ventura to Poirot
 // it then return invoke the printName function and return the detective printName
 // console.log will print Poirot as its been changed inside detectiveInfo function.
+
+// ================================================================== //
+
+
+//Episode 6
+
+var murderer = 'rick';
+
+var outerFunction = function() {
+  var murderer = 'marc';
+
+  var innerFunction = function() {
+    murderer = 'valerie';
+  }
+
+  innerFunction();
+}
+
+outerFunction();
+console.log('the murderer is ', murderer);
+// this will return the murderer is rick.
+// cause outerFunction declare its own var murderer.
