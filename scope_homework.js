@@ -24,7 +24,7 @@ var result = function() {
 
 console.log(result()); // 3
 // first a variable score is created and assigned with the value of 5.
-// the function result re-assign the score to number 3 and return the new score value.
+// the function result declare its own var.
 
 // ================================================================== //
 
